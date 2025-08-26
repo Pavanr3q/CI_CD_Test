@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Preparation') {
             steps {
-               git changelog: false, credentialsId: '67f13f3f-ed5d-429d-848d-dfadc6651674', poll: false, url: 'https://github.com/pavanr3q/CI_CD_Test.git'
+               git changelog: false, 'main' credentialsId: '67f13f3f-ed5d-429d-848d-dfadc6651674', poll: false, url: 'https://github.com/pavanr3q/CI_CD_Test.git'
             }
         }
         stage('Build') {
@@ -28,7 +28,7 @@ pipeline {
     stages {
         stage('Fetching Git Repository') {
             steps {
-               git changelog: false, credentialsId: '67f13f3f-ed5d-429d-848d-dfadc6651674', poll: false, url: 'https://github.com/pavanr3q/CI_CD_Test.git'
+               git changelog: false, 'main' credentialsId: '67f13f3f-ed5d-429d-848d-dfadc6651674', poll: false, url: 'https://github.com/pavanr3q/CI_CD_Test.git'
             }
         }
         stage('Build') {
